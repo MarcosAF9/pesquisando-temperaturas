@@ -18,6 +18,7 @@ const WeatherApp = () => {
   const [icon, setIcon] = useState(clear_icon);
 
   const handleSearch = async () => {
+    setNotFound("");
     setIsLoading(true);
     try {
       const response = await fetch(
