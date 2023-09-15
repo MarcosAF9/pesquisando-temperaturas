@@ -35,6 +35,8 @@ const WeatherApp = () => {
             {data && data.name && data.name}
             <img
               src={`https://flagsapi.com/${data?.sys?.country}/shiny/64.png`}
+              alt="country-flag"
+              className="country-flag"
             />
           </div>
           <div className="data-container">
