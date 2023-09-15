@@ -49,7 +49,7 @@ const WeatherForm = () => {
   };
 
   return (
-    <form className="top-bar" onSubmit={handleSearch}>
+    <form className="form" onSubmit={handleSearch}>
       <input
         type="text"
         className="cityInput"
