@@ -18,10 +18,8 @@ const WeatherApp = () => {
       ) : !data ? (
         <h2 className="aux-text">Digite o nome da cidade</h2>
       ) : (
-        <>
-          <div className="weather-image">
-            <img src={icon} alt="weather-icon" />
-          </div>
+        <div className="weather-container">
+          <img src={icon} alt="weather-icon" className="weather-image" />
           <div className="weather-condition">
             {data &&
               data.weather &&
@@ -59,7 +57,7 @@ const WeatherApp = () => {
               </div>
             </div>
           </div>
-        </>
+        </div>
       )}
     </div>
   );
